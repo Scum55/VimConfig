@@ -48,9 +48,25 @@ return packer.startup(function(use)
 use "wbthomason/packer.nvim" -- Have packer manage itself
 use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
 use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-use "windwp/nvim-autopairs" --- autocloses brackets
-
-
+use "windwp/nvim-autopairs" --- autocloses bracket
+use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
+use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
+use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
+use({ "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" })
+use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
+-- Lua
+use {
+  "ahmedkhalf/project.nvim",
+  config = function()
+    require("project_nvim").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
+use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
+use("folke/which-key.nvim")
 -- cmp plugins
 use "hrsh7th/nvim-cmp" -- The completion plugin
 use "hrsh7th/cmp-buffer" -- buffer completions
@@ -66,9 +82,15 @@ use "rafamadriz/friendly-snippets"
 use "neovim/nvim-lspconfig"
 use "williamboman/nvim-lsp-installer"
 -- colorscheme
+use "rafamadriz/neon"
+use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
 use "lunarvim/colorschemes"
 
--- telescope
+-- Treesitter
+use({
+	"nvim-treesitter/nvim-treesitter",
+	commit = "518e27589c0463af15463c9d675c65e464efc2fe",
+})-- telescope
 use "nvim-telescope/telescope.nvim"
 use "nvim-telescope/telescope-media-files.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
