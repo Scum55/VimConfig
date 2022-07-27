@@ -65,8 +65,12 @@ use "rafamadriz/friendly-snippets"
 -- lsp
 use "neovim/nvim-lspconfig"
 use "williamboman/nvim-lsp-installer"
+-- colorscheme
+use "lunarvim/colorschemes"
 
-
+-- telescope
+use "nvim-telescope/telescope.nvim"
+use "nvim-telescope/telescope-media-files.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
