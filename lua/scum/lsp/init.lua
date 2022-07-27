@@ -5,3 +5,4 @@ end
 
 require("scum.lsp.lsp-installer")
 require("scum.lsp.handlers").setup()
+require("scum.lsp.null-ls")

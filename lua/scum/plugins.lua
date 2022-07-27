@@ -82,6 +82,7 @@ use "rafamadriz/friendly-snippets"
 -- lsp
 use "neovim/nvim-lspconfig"
 use "williamboman/nvim-lsp-installer"
+use({ "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" })
 -- colorscheme
 use "rafamadriz/neon"
 use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
