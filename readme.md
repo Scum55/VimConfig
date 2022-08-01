@@ -6,4 +6,5 @@
 <li>pip </li>
 <li>ripgrep </li>
 <li>  git(1), curl(1) or wget(1), unzip(1), tar(1), gzip(1)</li>
+<li> NULL-LS supports prettier,black,eslint,flake8, etc </li>
 </ul>
